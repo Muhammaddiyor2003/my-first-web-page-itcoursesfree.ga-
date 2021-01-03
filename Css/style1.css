@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+.menyu{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+    overflow: hidden;
+}
+.menyu li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding: 16px;
+    color: white;
+}
+.menyu li:hover{
+    background-color: black;
+    
+}
+.a{
+    background-color: green;
+}
+
+.me::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.m{
+    float: left;
+    padding: 15px;
+}
+
+.menyu2{
+    width: 25%;
+}
+.city{
+    width: 75%;
+    
+}
+.menyu2 ul{
+    margin: 0;
+    padding: 0;
+}
+.menyu2 li{
+    list-style-type: none;
+    background-color: rgba(177, 177, 177, 0.267);
+    margin-bottom: 4px;
+    padding: 8px;
+}
+.men{
+    background-color: rgb(10, 116, 255);
+    padding: 15px;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    margin: 0px;
+    padding: 16px;
+    background-color: gray;
+    overflow: hidden;
+}

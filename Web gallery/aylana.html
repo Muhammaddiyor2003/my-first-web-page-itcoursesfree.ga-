@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylana</title>
+    <style>
+        .div{
+            width: 100px;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: blue;
+            position: relative;
+            animation: me 4s linear 1s alternate infinite;
+        }
+        .div:hover{
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+        }
+        @keyframes me {
+            0% {background-color: yellow;transform: rotatex(0deg);left: 0;top: 0;}
+            25% {background-color: red;transform: rotate(20deg);left: 0;top: 0;}
+            50%{background-color: green;transform: rotatex(0deg); left: 500px;top: 0;}
+            75% {background-color: greenyellow;transform: rotatex(0deg);left: 500px;top:0;}
+            100% {background-color: wheat;transform: rotatex(-360deg) rotate(-360deg);left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="div">Meni harakatlanuvchi qutiman</div>
+    
+</body>
+</html>

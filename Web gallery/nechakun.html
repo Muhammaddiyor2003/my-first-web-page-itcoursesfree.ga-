@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaqt bu ortga qaytmas narsa!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to left, rgb(61, 61, 61),black,rgb(61, 61, 61));
+            color: rgb(236, 234, 234);
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .h{
+            color: cyan;
+            font-weight: 500;
+        }
+        #sana,#sanaa {
+            display: none;
+        }
+        #bil:hover,#Keyingi:hover,#rese:hover {
+            background-color: black;
+            color: white;
+            border: 3px solid black;
+            outline: 1px solid white;
+        }
+        #bil,#Keyingi,#rese {
+            padding: 6px 30px;
+            border: 0px solid black;
+            
+        }
+        #s {
+            color:red;
+            letter-spacing: 3px;
+        }
+        #tanlov {
+            padding: 5px;
+            text-align: center;
+        }
+        .home a {
+            position: absolute;
+            top: 0;
+            right: 0;  
+            text-decoration: none;
+            color: rgb(226, 43, 180);
+            padding: 8px;
+        }
+        .home a:hover {
+            background-color: burlywood;
+            color: chartreuse;
+        }
+        #bill {
+            display: none;
+        }
+        #reset {
+            display: none;
+        }
+        #reset a {
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            border-radius: 16px;
+            
+        }
+        #sanaa {
+            display: none;
+        }
+        #a,#b {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <span class="home"><a href="../index.html">Bosh sahifa</a></span>
+    <h1>Assalomu alaykum!</h1>
+    <h3>Siz hech o'ylab ko'rganmisiz hozir hayotingizni nechanchi kunini, 
+    soatini yoki minut hattoki sekundini yashayotganingizni o'ylab 
+    ko'rganmisiz? <span class="h">Axir vaqt orqaga qaytmaydi.</span>
+    <p>Savolimga jovobingiz yo'q bo'lsa marhamat bilib oling.</p>
+    </h3>
+    <form>
+        <p>
+        Nimani bilib olmoqchisiz tanlang:<p>
+        <span id="s">    Hayotimni nechanchi <span id="soz"></span>
+        <select name="kun" id="tanlov">
+            <option value="Kun">Kun</option>
+            <option value="soat">Saot</option>
+            <option value="minut">Minut</option>
+            <option value="sekund">Sekund</option>
+        </select>  Yashayotganimni.</span></p>
+        <div id="sana"> Tug'ilgan sananggiz:<p>
+            <input type="date" name="kun" id="a"></div>
+        <div id="sanaa">Tug'ilgan sananggiz va soati:<p>
+            <input type="datetime-local" name="kun" id="b">
+        </div>
+        <p>
+            <input type="submit" name="" id="Keyingi" value="Keyingi qadam"></p>
+        <div id="bill">
+            <input type="submit" name="" id="bil" value="Bilish"><p>
+            Natija:
+        </div>
+        <p id="natija"></p>
+        <p id="reset">
+            <a href="/Web gallery/nechakun.html" id="rese">Qaytadan</a>
+        </p>
+    </form>
+    <script src="../js/kun.js"></script>
+</body>
+</html>
